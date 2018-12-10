@@ -1,0 +1,364 @@
+html,
+body {
+    height: 100%;
+}
+
+.help-block-error{
+	margin: 0;
+}
+
+.invest-form {
+	width: 315px;
+}
+
+
+
+/* Top block */
+
+.top-title {
+	font-size: 12pt;
+	font-family: 'Roboto', sans-serif;
+	margin: 14px 0 0 24px;
+}
+
+hr {
+    margin-top: 10px;
+}
+
+.control-label {
+	font-weight: normal;
+	font-size: 10pt;
+	font-family: 'Arial', sans-serif;
+	margin: -4px 0 0 27px;
+	width: auto;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.top-block {
+	margin-bottom: 33px;
+}
+.invest-input {
+	padding-left: 6px;
+	width: 150px;
+}
+.invest-input:before {
+	content: "\0024";
+	position: absolute;
+	left: 14px;
+	top: 4px;
+	font-size: 13px;
+}
+
+.income-input:before, .outcome-input:before {
+	content: "$";
+	position: absolute;
+	left: 24px;
+	top: 4px;
+	font-size: 13px;
+}
+.income-input.radiocheck:before, .outcome-input.radiocheck:before {
+	content: "%";
+}
+
+.mult-input {
+	padding-left: 22px;
+	width: 72px;
+	padding-right: 0;
+}
+.mult-input:before {
+	content: "x";
+	position: absolute;
+	left: 30px;
+	top: 4px;
+	font-size: 11px;
+}
+
+.mult-slider {
+	position: absolute;
+	background-color: #3A3B3C;
+	color: darkgray;
+	height: 61px;
+    width: 280px;
+	top: 133px;
+    left: 21px;
+	display: none;
+}
+.mult-numbers {
+	margin: 15px 0 0 23px;
+    font-size: 11px;
+}
+.mult-five {
+	margin-left: 33px;
+}
+.mult-twenty {
+	margin: 0 96px 0 67px;
+}
+
+
+/* Slider */
+
+input[type=range] {
+  -webkit-appearance: none; 
+  width: 232px;
+  margin: 19px 0 0 24px;
+  background-color: #ccc;
+  border-radius: 6px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none; 
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: ;
+  height: 18px;
+  width: 18px;
+  border-radius: 8px;
+  background: #7E98E5;
+  cursor: pointer;
+  margin-top: -7px; 
+  box-shadow:;
+  border-radius: 12px;  
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4.4px;
+  cursor: pointer;
+  box-shadow:;
+  background: gray;
+  border-radius: 6px;
+}
+
+
+/*-----*/
+
+input.form-control {
+	height: 24px;
+	text-align: right;
+	padding-right: 8px;
+}
+
+.factInv {
+	display: inline-block;
+	padding: 2px 0 0 5px;
+	color: gray;
+}
+
+.field-investform-restriction {
+	/*margin-bottom: 12px;*/
+}
+
+.bottom-title {
+	font-size: 10pt;
+	font-family: 'Arial', sans-serif;
+	margin: 0 0 12px 15px;
+	width: auto;
+	color: gray;
+	cursor: pointer;
+}
+
+.bottom-block {
+	visibility: hidden;
+}
+
+.radio-inline {
+	padding-top: 2px!important;
+	padding-left: 0;
+}
+
+#investform-restriction {
+	padding-left: 15px;
+}
+
+.income-checkbox {
+	width: auto;
+	padding: 0 0 0 50px;
+}
+.income-checkbox label {
+	font-weight: normal;
+	font-size: 10pt;
+	font-family: 'Arial', sans-serif;
+}
+
+
+
+/* Checkboxes and radiobuttons*/
+
+#investform-income, #investform-outcome, #radiobutton0, #radiobutton1 {
+	display: none;
+}
+.income-checkbox label, .radio-inline span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	padding-left: 25px;
+	margin: 5px 0px 0 -7px;
+}
+
+.radio-inline span {
+	padding-left: 21px;
+	margin: 0;
+}
+.radio-inline + .radio-inline {
+	margin-left: 5px;
+}
+
+.income-checkbox label:before, .radio-inline span:before {
+	content: "";
+	width: 18px;
+	height: 18px;
+	position: absolute;  
+	left: 0;
+}
+.income-checkbox label:before {
+	background: url('../images/check_off.png') left center no-repeat;
+    margin-top: 2px;
+}
+input[type=checkbox]:checked + label:before {  
+	background: url('../images/check_on.png') left center no-repeat;  
+}
+
+.radio-inline span:before {
+	background: url('../images/radio_off.png') left center no-repeat;
+    margin-top: 2px;
+}
+input[type=radio]:checked + span:before {  
+	background: url('../images/radio_on.png') left center no-repeat;  
+}
+
+.input-disabled {
+	pointer-events: none;
+    opacity: 0.4;
+}
+	
+	
+	
+/* Income/outcome fields */	
+	
+
+.field-investform-income, .field-investform-outcome {
+	display: inline-block;
+	margin-bottom: 13px;
+}
+.field-investform-takeincome, .field-investform-takeoutcome {
+	display: inline-block;
+	width: 150px;
+	margin-top: 3px;
+}
+
+.income-input {
+	margin: 0 0 0 67px;
+	width: 158px;
+}
+.outcome-input {
+	margin: 0 0 0 79px;
+	width: 158px;
+}
+
+.checkbox-row {
+	margin-bottom: -11px;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 1;
+	transform: scale(1.20);
+}
+#investform-takeincome, #investform-takeoutcome {
+	padding-right: 0;
+}
+input[type=number]::-webkit-outer-spin-button, 
+input[type=number]::-webkit-inner-spin-button {
+	margin-left: 5px;
+} 
+
+
+
+/* Buttons */
+
+.button-row {
+	margin-top: 13px;
+    margin-left: -18px!important;
+}
+
+.invest-btn {
+	display: inline-block;
+	padding: 25px 65px;
+	cursor: pointer;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+
+
+/* Error messages */
+
+.suminv-error {
+	position: absolute;
+	background-color: #E64545;
+	color: white!important;
+	height: 43px;
+    width: 127px;
+    top: 18px;
+    left: 165px;
+	font-size: 11px;
+    padding: 7px 0 0 7px;
+	border-radius: 4px;
+}
+
+.mult-error {
+	position: absolute;
+	background-color: #E64545;
+	color: white!important;
+	height: 43px;
+    width: 127px;
+    top: 130px;
+    left: 165px;
+	font-size: 11px;
+    padding: 7px 0 0 7px;
+	border-radius: 4px;
+}
+.takeincome-error {
+	position: absolute;
+	background-color: #E64545;
+	color: white!important;
+	height: 43px;
+    width: 127px;
+    top: 175px;
+    left: 165px;
+	font-size: 11px;
+    padding: 7px 0 0 7px;
+	border-radius: 4px;
+}
+
+.takeoutcome-error {
+	position: absolute;
+	background-color: #E64545;
+	color: white!important;
+	height: 43px;
+    width: 127px;
+    top: 210px;
+    left: 165px;
+	font-size: 11px;
+    padding: 7px 7px 0 7px;
+	border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
